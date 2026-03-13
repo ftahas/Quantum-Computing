@@ -9,6 +9,7 @@ A collection of research-oriented Jupyter notebooks exploring quantum computing 
 | **[01 — Quantum Computing Fundamentals](quantum_computing_simulations.ipynb)** | Single-qubit gates, Bell states, teleportation, Deutsch–Jozsa, Grover's search, noise simulation | 1–3 | Introductory |
 | **[02 — QFT & Shor's Algorithm](qft_shors_algorithm.ipynb)** | Quantum Fourier Transform, phase estimation, modular exponentiation, Shor's factoring (N=15, 21, 33, 35) | 4–14 | Advanced |
 | **[03 — Variational Quantum Eigensolver](variational_quantum_eigensolver.ipynb)** | VQE framework, Pauli Hamiltonians, ansatz design, H₂ & LiH ground states, noise-aware VQE, barren plateaus | 2–6 | Advanced |
+| **[04 — Quantum Error Correction](quantum_error_correction.ipynb)** | Bit-flip & phase-flip codes, Shor [[9,1,3]], stabiliser formalism, Steane [[7,1,3]], threshold theorem, surface code, noisy syndromes | 3–17 | Advanced |
 
 ## Getting Started
 
@@ -70,6 +71,17 @@ print(result.get_counts())
 - Barren plateau demonstration (gradient variance scaling)
 - LiH ground state (6-qubit benchmark)
 
+### Quantum Error Correction
+- Pauli error model (bit-flip, phase-flip, depolarising)
+- 3-qubit bit-flip and phase-flip codes with syndrome extraction
+- Shor [[9,1,3]] code — first code correcting arbitrary single-qubit errors
+- Stabiliser formalism and eigenvalue-based error detection
+- CSS codes and the Steane [[7,1,3]] code from the Hamming code
+- Concatenated codes and doubly-exponential error suppression
+- Threshold theorem and its implications
+- Surface code lattice structure and resource estimates
+- Repeated syndrome extraction under noisy measurements
+
 ## Tech Stack
 
 - **Qiskit 2.x** — circuit construction, transpilation, quantum info
@@ -84,6 +96,8 @@ print(result.get_counts())
 - Peruzzo, A. et al. (2014). "A variational eigenvalue solver on a photonic quantum processor." *Nature Communications*.
 - McClean, J. R. et al. (2018). "Barren plateaus in quantum neural network training landscapes." *Nature Communications*.
 - Gidney, C. & Ekerå, M. (2021). "How to factor 2048 bit RSA integers in 8 hours using 20 million noisy qubits." *Quantum*.
+- Fowler, A. G. et al. (2012). "Surface codes: Towards practical large-scale quantum computation." *Phys. Rev. A*.
+- Google Quantum AI (2023). "Suppressing quantum errors by scaling a surface code logical qubit." *Nature*.
 
 ## License
 
