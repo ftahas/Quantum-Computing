@@ -1,0 +1,17 @@
+# Quantum Computing Simulations — Dependencies
+
+# Core quantum computing
+qiskit>=2.0
+qiskit-aer>=0.15
+
+# Scientific computing
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+
+# Jupyter
+notebook>=7.0
+jupyterlab>=4.0
+
+# Qiskit visualisation (optional, for matplotlib circuit drawings)
+pylatexenc>=2.10
